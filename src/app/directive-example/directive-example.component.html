@@ -1,0 +1,10 @@
+<button type="button" class="btn btn-primary" (click)="onClickButton()">{{buttonMessage}}</button>
+<br>
+<br>
+<br>
+<p *ngIf="showParagraph">{{paragraph}}</p>
+<br>
+<br>
+<br>
+<p [ngStyle]="{backgroundColor:indexOfelement>=4?'blue':'white'}" [ngClass]="{textColor:indexOfelement>=4}" *ngFor="let stamp of timeStamp; 
+let indexOfelement=index;">{{stamp}}</p>
